@@ -1,0 +1,10 @@
+# Ignore compiled files
+target/
+dbt_modules/
+
+# Ignore sensitive files
+profiles.yml
+
+# Ignore logs
+logs/
+*.log

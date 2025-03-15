@@ -1,0 +1,22 @@
+# ...existing code...
+name: 'Psql_Sample'  # Add the required name field
+version: '1.0'
+profile: my_project # Replace 'my_profile' with your actual profile name
+models:
+  Psql_Sample:   # Replace with your actual project name
+    ticket_data:
+      +materialized: view  # or table, depending on your preference
+
+      my_project:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: Rajath@123
+      dbname: service_data
+      schema: public
+      port: 5432
+      threads: 4  # Adjust this number based on your system's resources
+# ...existing code...
